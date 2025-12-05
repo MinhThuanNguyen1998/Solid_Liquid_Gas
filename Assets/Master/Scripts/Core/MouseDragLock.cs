@@ -1,0 +1,9 @@
+using UnityEngine;
+
+public class MouseDragLock : MonoBehaviour
+{
+    public static bool IsBlocked { get; private set; } = false;
+
+    public static void Block() => IsBlocked = true;
+    public static void Unblock() => IsBlocked = false;
+}
