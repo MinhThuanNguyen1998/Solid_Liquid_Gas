@@ -7,7 +7,6 @@ public class ModelLoader : MonoBehaviour
     [SerializeField] private GameObject m_SolidModel;
     [SerializeField] private GameObject m_LiquidModel;
     [SerializeField] private GameObject m_GasModel;
-    [SerializeField] private ElementChecker m_ElementChecker;
     private GameObject m_CurrentStateModel;
     private void OnEnable()
     {
@@ -25,12 +24,10 @@ public class ModelLoader : MonoBehaviour
         {
             case var _ when state == Config.Solid:
                 prefabToLoad = m_SolidModel;
-          
                 break;
 
             case var _ when state == Config.Liquid:
                 prefabToLoad = m_LiquidModel;
-            
                 break;
             case var _ when state == Config.Gas:
                 prefabToLoad = m_GasModel;
