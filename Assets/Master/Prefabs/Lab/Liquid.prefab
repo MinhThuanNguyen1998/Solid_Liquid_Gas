@@ -11466,6 +11466,9 @@ MonoBehaviour:
   m_FireParticleSystem: {fileID: 4244041328255109999}
   m_SmokeParticleSystem: {fileID: 6302598374042964952}
   m_LiquidVolume: {fileID: 1920881534798042829}
+  m_ListOutline:
+  - {fileID: 8872487338947505530}
+  - {fileID: 1291830000505035127}
 --- !u!1 &8857893265100104590
 GameObject:
   m_ObjectHideFlags: 0
