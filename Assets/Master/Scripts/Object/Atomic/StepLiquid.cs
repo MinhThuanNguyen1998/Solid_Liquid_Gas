@@ -14,15 +14,15 @@ public class StepLiquid : StepAtomicBase
         switch (CurretSteps)
         {
             case 0:
-                Debug.Log("Liquid step 0: Use the pipet to draw up liquid" );
+                Debug.Log("Liquid step 0: Place the flask at Bunsen bunrner's position" );
                 StepTutorialManager.Instance.GotoState(2);
                 break;
             case 1:
-                Debug.Log("Solid step 1: Pour liquid from pipet to a tube");
+                Debug.Log("Liquid step 1: Turn on the lighter");
                 StepTutorialManager.Instance.GotoState(3);
                 break;
             case 2:
-                Debug.Log("Solid step 2: Use a magnifying glass");
+                Debug.Log("Liquid step 2: Use the magnifying");
                 StepTutorialManager.Instance.GotoState(4);
                 break;
         }
