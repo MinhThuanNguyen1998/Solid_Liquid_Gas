@@ -28,5 +28,7 @@ public class LighterTrigger : BaseTrigger
         Debug.Log("Turn on the ligther");
         m_StepLiquid.GoToNextStep();
         m_BurnerEffectController.TurnOnEffect();
+        MouseDragLock.Block();
+            
     }
 }

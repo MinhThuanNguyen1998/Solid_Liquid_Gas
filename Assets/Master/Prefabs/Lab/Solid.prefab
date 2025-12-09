@@ -243,6 +243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BoundaryCube: {fileID: 0}
   m_UseSpecialYLimit: 1
+  m_DragCategory: 1
+  m_Outline: {fileID: 2307124560744459923}
   m_IsDragging: 0
   m_BoundYOffset: 0.23
 --- !u!114 &2307124560744459923
@@ -573,6 +575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BoundaryCube: {fileID: 0}
   m_UseSpecialYLimit: 1
+  m_DragCategory: 1
+  m_Outline: {fileID: 6042065479181899210}
   m_IsDragging: 0
   m_BoundYOffset: 2
 --- !u!114 &6042065479181899210

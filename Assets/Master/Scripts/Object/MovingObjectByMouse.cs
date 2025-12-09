@@ -6,6 +6,8 @@ public class MovingObjectByMouse : MonoBehaviour
 {
     [SerializeField] private Renderer m_BoundaryCube;
     [SerializeField] private bool m_UseSpecialYLimit;
+    [SerializeField] private DragCategory m_DragCategory = DragCategory.None;
+    [SerializeField] private Outline m_Outline;
     private Vector3 m_Offset;
     public bool m_IsDragging = false;
     private Bounds m_Bounds;
@@ -26,7 +28,8 @@ public class MovingObjectByMouse : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (MouseDragLock.IsBlocked) return;
+        if (MouseDragLock.IsBlocked && m_DragCategory != DragCategory.None)return;
+
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = Camera.main.WorldToScreenPoint(transform.position).z; 
         m_Offset = transform.position - Camera.main.ScreenToWorldPoint(mousePosition);
@@ -34,7 +37,7 @@ public class MovingObjectByMouse : MonoBehaviour
     }
     private void OnMouseDrag()
     {
-        if (MouseDragLock.IsBlocked) return;
+        if (MouseDragLock.IsBlocked && m_DragCategory != DragCategory.None) return;
         if (m_IsDragging)
         {
             Vector3 mousePosition = Input.mousePosition;
