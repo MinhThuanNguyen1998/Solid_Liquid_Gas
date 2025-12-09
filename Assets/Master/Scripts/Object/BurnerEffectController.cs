@@ -21,7 +21,6 @@ public class BurnerEffectController : MonoBehaviour
     }
     public void TurnOnEffect()
     {
-
         if (m_FireParticleSystem != null) 
         {
             StopOutline();
@@ -37,6 +36,7 @@ public class BurnerEffectController : MonoBehaviour
         {
             m_SmokeParticleSystem.Play();
             m_LiquidVolume.sparklingAmount = m_BoilingPoint;
+            MagnifyingManager.Instance.ActiveMagnifyingObject(true);
         }       
     }
 
@@ -47,8 +47,6 @@ public class BurnerEffectController : MonoBehaviour
             Color c = outline.OutlineColor;
             c.a = 0f;
             outline.OutlineColor = c;
-
         }
     }
-
 }
