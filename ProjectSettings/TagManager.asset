@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Boundary
   - Solid
-  - Tube
   - Flask
   - Pipe
   - GroupChangeColor
   - Table
+  - UnSolid
+  - Bunsen
   layers:
   - Default
   - TransparentFX
