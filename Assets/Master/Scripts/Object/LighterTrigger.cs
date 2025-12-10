@@ -10,7 +10,7 @@ public class LighterTrigger : BaseTrigger
     {
         if(other.gameObject.tag == "Bunsen")
         {
-            Debug.Log("Bunsen is OnTrigger");
+            //Debug.Log("Bunsen is OnTrigger");
             m_IsInTrigger = true;
         }
     }
@@ -18,17 +18,17 @@ public class LighterTrigger : BaseTrigger
     {
         if (other.gameObject.tag == "Bunsen")
         {
-            Debug.Log("Bunsen is OnExit");
+           //Debug.Log("Bunsen is OnExit");
             m_IsInTrigger = false;
         }
     }
     public void TurnOnLighter()
     {
         if (!m_IsInTrigger || m_StepLiquid.CurretSteps <= 0 || m_StepLiquid.CurretSteps >= 2) return;
-        Debug.Log("Turn on the ligther");
+        //Debug.Log("Turn on the ligther");
         m_StepLiquid.GoToNextStep();
         m_BurnerEffectController.TurnOnEffect();
         MouseDragLock.Block();
-            
+        
     }
 }
