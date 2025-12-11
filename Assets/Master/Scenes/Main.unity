@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BoundaryCube: {fileID: 0}
-  m_UseSpecialYLimit: 0
+  m_UseSpecialYLimit: 1
   m_DragCategory: 0
   m_Outline: {fileID: 0}
   m_IsDragging: 0
@@ -18820,8 +18820,8 @@ Transform:
   m_GameObject: {fileID: 1730384171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.05822754, y: -0.9738617, z: 0}
-  m_LocalScale: {x: 16.592466, y: 5.4031515, z: 1}
+  m_LocalPosition: {x: -0.05822754, y: -0.3644, z: 0}
+  m_LocalScale: {x: 16.592466, y: 6.622341, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1787265702}
