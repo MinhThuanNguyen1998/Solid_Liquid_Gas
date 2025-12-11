@@ -22,23 +22,16 @@ MonoBehaviour:
   - buttonName: "\u0110\u1ED5i m\xE0u k\xEDnh l\xFAp"
     buttonContent: "N\xFAt \u0111\u1ED5i m\xE0u k\xEDnh l\xFAp"
     buttonAudio: {fileID: 8300000, guid: 6171053a72c511c4b972b7621c54550e, type: 3}
-  - buttonName: "Ki\u1EC3m tra"
-    buttonContent: "N\xFAt ki\u1EC3m tra c\u1EA5u h\xECnh nguy\xEAn t\u1EED"
-    buttonAudio: {fileID: 8300000, guid: fa99edaf96076ee4dad0ec16246c52c9, type: 3}
   - buttonName: "H\u01B0\u1EDBng d\u1EABn"
     buttonContent: "N\xFAt hi\u1EC3n th\u1ECB c\xE1c b\u01B0\u1EDBc c\u1EE7a ph\u1EA7n
       m\u1EC1m"
     buttonAudio: {fileID: 8300000, guid: 8b6d567afcff31948b6d0f0082b172df, type: 3}
   - buttonName: "L\xFD thuy\u1EBFt"
-    buttonContent: "N\xFAt hi\u1EC3n th\u1ECB b\u1EA3ng tu\u1EA7n ho\xE0n h\xF3a
-      h\u1ECDc"
-    buttonAudio: {fileID: 8300000, guid: 8373dc39ce29e4f47b75a03dcd9ad62a, type: 3}
+    buttonContent: "N\xFAt hi\u1EC3n th\u1ECB l\xFD thuy\u1EBFt c\u1EE7a th\xED nghi\u1EC7m"
+    buttonAudio: {fileID: 8300000, guid: 06f4365d47f938e4fb51c82228caa6bd, type: 3}
   - buttonName: "Danh s\xE1ch"
     buttonContent: "Danh s\xE1ch ch\u1ECDn c\xE1c th\u1EC3 c\u1EE7a ch\u1EA5t"
     buttonAudio: {fileID: 8300000, guid: 1656bb1e58698274c8bf1e3d37bf5044, type: 3}
-  - buttonName: "Danh s\xE1ch"
-    buttonContent: "Danh s\xE1ch ch\u1ECDn\\nc\xE1c ch\u1EA5t"
-    buttonAudio: {fileID: 8300000, guid: 5962d388d58c80f42a36db41177af676, type: 3}
   - buttonName: "Ch\u1EBF \u0111\u1ED9 g\u1EE3i \xFD"
     buttonContent: "N\xFAt \u0111\u1EC3 b\u1EADt ch\u1EBF \u0111\u1ED9\\ng\u1EE3i
       \xFD"
@@ -49,20 +42,20 @@ MonoBehaviour:
   - buttonName: "B\xECnh th\u1EE7y tinh"
     buttonContent: "D\xF9ng \u0111\u1EC3 ch\u1EE9a \u0111\u1EF1ng ch\u1EA5t l\u1ECFng"
     buttonAudio: {fileID: 8300000, guid: a1a98121db922bd40b1110fe3bc86d4b, type: 3}
-  - buttonName: "B\xECnh \u0111i\u1EC1u ch\u1EBF kh\xED"
-    buttonContent: "D\xF9ng \u0111\u1EC3 ch\u1EE9a \u0111\u1EF1ng v\xE0 d\u1EABn
-      ch\u1EA5t kh\xED"
-    buttonAudio: {fileID: 8300000, guid: cc2a595ef201e484fadef563a8d1ff82, type: 3}
+  - buttonName: "B\u1EADt l\u1EEDa"
+    buttonContent: "D\xF9ng \u0111\u1EC3 cung c\u1EA5p ngu\u1ED3n nhi\u1EC7t nh\u1ECF"
+    buttonAudio: {fileID: 8300000, guid: 72604f5ce347d3540822c752fd80d1b3, type: 3}
   - buttonName: "K\u1EB9p g\u1EAFp"
     buttonContent: "D\xF9ng \u0111\u1EC3 g\u1EAFp ch\u1EA5t r\u1EAFn"
     buttonAudio: {fileID: 8300000, guid: a1006a86b1cd1eb40b5204ed52c8659a, type: 3}
-  - buttonName: "\u1ED0ng nh\u1ECF gi\u1ECDt"
-    buttonContent: "D\xF9ng \u0111\u1EC3 chuy\u1EC3n giao ch\u1EA5t l\u1ECFng"
-    buttonAudio: {fileID: 8300000, guid: a1a1db7e4053a6a4c868cafe2361d6e7, type: 3}
-  - buttonName: "\u1ED0ng nghi\u1EC7m"
-    buttonContent: "D\xF9ng \u0111\u1EC3 ch\u1EE9a\\ndung d\u1ECBch"
-    buttonAudio: {fileID: 8300000, guid: 653d4504f33c143478bddb9e0e709d6d, type: 3}
-  - buttonName: "\u0110\u0129a petri"
+  - buttonName: "Gh\u1EBF \u0111\u1EE1 3 ch\xE2n"
+    buttonContent: "D\xF9ng \u0111\u1EC3 \u0111\u1EB7t b\xECnh ch\u1EE9a ch\u1EA5t
+      l\u1ECFng"
+    buttonAudio: {fileID: 8300000, guid: b1d5fd5bf74b15145b3ef56e44401e88, type: 3}
+  - buttonName: "\u0110\xE8n bunsen"
+    buttonContent: "D\xF9ng \u0111\u1EC3 t\u1EA1o l\u1EEDa"
+    buttonAudio: {fileID: 8300000, guid: 09e2d1039bb68594486a7f487be6f5c2, type: 3}
+  - buttonName: "\u0110\u0129a petri "
     buttonContent: "D\xF9ng \u0111\u1EC3 ch\u1EE9a m\u1EABu ch\u1EA5t r\u1EAFn c\u1EA7n
       quan s\xE1t"
     buttonAudio: {fileID: 8300000, guid: 9118f61c9e8102e46952c0ce5d42fd21, type: 3}
