@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.WSA;
 using static UnityEngine.UI.Image;
 
 public class BottleTrigger : BaseTrigger
@@ -47,8 +46,6 @@ public class BottleTrigger : BaseTrigger
         yield return StartCoroutine(BlendMaterial(start, mid, duration));
         SetStructureState(false, true);
         yield return StartCoroutine(BlendMaterial(mid, end, duration));
-        
-
     }
     private IEnumerator BlendMaterial(Material from, Material to, float time)
     {
