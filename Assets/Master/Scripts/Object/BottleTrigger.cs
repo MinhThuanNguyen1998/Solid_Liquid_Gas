@@ -25,12 +25,15 @@ public class BottleTrigger : BaseTrigger
     {
         if (other.CompareTag("Lid"))
         {
+            
             other.transform.SetParent(m_ParentBottle.transform);
             other.transform.DOMove(m_AnchorPoint.position, 1f)
             .SetEase(Ease.InOutSine)
             .OnComplete(() =>
             {
+                AudioMainManager.Instance.PlayOnShot(SoundType.CloseBottle);
                 other.transform.localPosition = m_AnchorPoint.localPosition;
+                
             });
             m_StepGas?.GoToNextStep();
             StartCoroutine(CoroutineBlend3Materials(m_OriginMaterial, m_EffectAirMaterial,m_EffectAirMaterial1, m_Duration));

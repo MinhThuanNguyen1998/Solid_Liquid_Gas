@@ -19,6 +19,10 @@ public class BurnerEffectController : MonoBehaviour
         m_FireParticleSystem.Stop();
         m_SmokeParticleSystem.Stop();
     }
+    private void OnDestroy()
+    {
+        AudioMainManager.Instance.StopLoop();
+    }
     public void TurnOnEffect()
     {
         if (m_FireParticleSystem != null) 
@@ -35,6 +39,7 @@ public class BurnerEffectController : MonoBehaviour
         if (m_SmokeParticleSystem != null)
         {
             m_SmokeParticleSystem.Play();
+            AudioMainManager.Instance.PlayLoop(SoundType.BoilingWater);
             m_LiquidVolume.sparklingAmount = m_BoilingPoint;
             MagnifyingManager.Instance.ActiveMagnifyingObject(true);
         }       
