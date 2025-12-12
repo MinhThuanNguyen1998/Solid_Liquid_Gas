@@ -1879,6 +1879,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Amplitude: 0.5
   m_Speed: 5
+  IsGas: 1
+  GasRadius: 2
+  GasSpeed: 1
 --- !u!1 &8472587843864808370
 GameObject:
   m_ObjectHideFlags: 0
