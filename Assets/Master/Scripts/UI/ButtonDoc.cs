@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Michsky.MUIP;
 using NUnit.Framework;
@@ -12,24 +13,27 @@ public class ButtonDoc : MonoBehaviour
     [SerializeField] private AudioSource m_AudioSource;
     [SerializeField] private List<AudioClip> m_ListAudioClip;
     [SerializeField] private CustomDropdown m_DropDownVoice;
+    [SerializeField] private ScrollRect m_ScrollRect;
     private bool isSoundOn = true;
 
     private void OnEnable() => ResetButtonDocState();
     private void Start()
     {
         m_SoundDocButton.onClick.AddListener(ToggleSoundIcon);
-        if (m_DropDownVoice != null) m_DropDownVoice.onValueChanged.AddListener(OnChangeVoice);
+        if (m_DropDownVoice != null)m_DropDownVoice.onValueChanged.AddListener(OnChangeVoice);
         ResetButtonDocState();
+        SyncUIDropDownList();
     }
-   
-    private void OnChangeVoice(int index)
+    private void OnChangeVoice(int index) => VoiceDropDownList.CurrentVoiceIndex = index;
+  
+    private void SyncUIDropDownList()
     {
-        VoiceDropDownList.CurrentVoiceIndex = index;
-        
+        m_DropDownVoice.selectedItemIndex = VoiceDropDownList.CurrentVoiceIndex;
+        //m_DropDownVoice.SetupDropdown();
+        m_DropDownVoice.SetDropdownIndex(m_DropDownVoice.selectedItemIndex);  
     }
     private void ToggleSoundIcon()
     {
-        Debug.Log("PlaySound");
         isSoundOn = !isSoundOn;
         if (!isSoundOn)
         {
@@ -37,7 +41,6 @@ public class ButtonDoc : MonoBehaviour
             m_AudioSource.Play();
         }
         else m_AudioSource.Pause();
-       
         UpdateUI();
     }
 
@@ -50,5 +53,6 @@ public class ButtonDoc : MonoBehaviour
     {
         isSoundOn = true;
         UpdateUI();
+        m_ScrollRect.verticalNormalizedPosition = 1f;
     }
 }

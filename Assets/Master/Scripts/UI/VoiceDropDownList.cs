@@ -11,6 +11,7 @@ public class VoiceDropDownList : MonoBehaviour
     {
         if (m_DropDownVoice != null)
             m_DropDownVoice.onValueChanged.AddListener(OnChangeVoice);
+        SyncUIDropDownList();
     }
     private void Start()
     {
@@ -25,6 +26,10 @@ public class VoiceDropDownList : MonoBehaviour
     private void OnChangeVoice(int index)
     {
         CurrentVoiceIndex = index;
-
+    }
+    private void SyncUIDropDownList()
+    {
+        m_DropDownVoice.selectedItemIndex = CurrentVoiceIndex;
+        m_DropDownVoice.SetDropdownIndex(m_DropDownVoice.selectedItemIndex);
     }
 }
