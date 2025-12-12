@@ -7,7 +7,6 @@ public enum SoundType
     Popup,
     TurnOnLighter,
     CloseBottle,
-    BoilingWater,
     Solid,
     Liquid,
     Gas,
@@ -20,7 +19,6 @@ public class AudioMainManager : SingletonMain<AudioMainManager>
     [SerializeField] private AudioClip m_AudioButtonClip;
     [SerializeField] private AudioClip m_AudioTurnOnLighter;
     [SerializeField] private AudioClip m_AudioCloseBottle;
-    [SerializeField] private AudioClip m_AudioBoilingWater;
 
     [SerializeField] private AudioClip m_AudioSolid;
     [SerializeField] private AudioClip m_AudioLiquid;
@@ -36,7 +34,6 @@ public class AudioMainManager : SingletonMain<AudioMainManager>
             { SoundType.Popup, m_AudioPopupClip },
             {SoundType.TurnOnLighter,m_AudioTurnOnLighter },
             {SoundType.CloseBottle,m_AudioCloseBottle },
-            {SoundType.BoilingWater,m_AudioBoilingWater},
             {SoundType.Solid,m_AudioSolid},
             {SoundType.Liquid,m_AudioLiquid},
             {SoundType.Gas, m_AudioGas },
