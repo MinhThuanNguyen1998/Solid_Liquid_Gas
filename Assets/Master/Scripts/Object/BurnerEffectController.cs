@@ -10,6 +10,9 @@ public class BurnerEffectController : MonoBehaviour
     [SerializeField] private ParticleSystem m_SmokeParticleSystem;
     [SerializeField] private LiquidVolume m_LiquidVolume;
     [SerializeField] private List<Outline> m_ListOutline;
+    [Header("SoundEffect")]
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioClip m_AudioBoilingWater;
     private float m_WaitingTimeToPlaySmokeParticleSystem = 15f;
     private float m_BoilingPoint = 0.32f;
     private Coroutine m_SmokeCoroutine;
@@ -19,7 +22,6 @@ public class BurnerEffectController : MonoBehaviour
         m_FireParticleSystem.Stop();
         m_SmokeParticleSystem.Stop();
     }
-    private void OnDisable() => AudioMainManager.Instance.StopLoop();
     public void TurnOnEffect()
     {
         if (m_FireParticleSystem != null) 
@@ -36,7 +38,7 @@ public class BurnerEffectController : MonoBehaviour
         if (m_SmokeParticleSystem != null)
         {
             m_SmokeParticleSystem.Play();
-            AudioMainManager.Instance.PlayLoop(SoundType.BoilingWater);
+            PlayLoopSoundBoilingWater();
             m_LiquidVolume.sparklingAmount = m_BoilingPoint;
             MagnifyingManager.Instance.ActiveMagnifyingObject(true);
         }       
@@ -51,4 +53,11 @@ public class BurnerEffectController : MonoBehaviour
             outline.OutlineColor = c;
         }
     }
+    public void PlayLoopSoundBoilingWater()
+    {
+        m_AudioSource.loop = true;
+        m_AudioSource.clip = m_AudioBoilingWater;
+        m_AudioSource.Play();
+    }
+   
 }
