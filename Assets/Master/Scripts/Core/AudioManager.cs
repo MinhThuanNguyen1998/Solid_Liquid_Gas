@@ -49,11 +49,6 @@ public class AudioMainManager : SingletonMain<AudioMainManager>
         else
             Debug.LogWarning($"AudioManager: AudioClip for {soundType} is not assigned.");
     }
-    public void StopSound(SoundType type) => m_AudioSource?.Stop();
-    public void StopAtomicSounds()
-    {
-        if (m_AudioSource != null && m_AudioSource.isPlaying) m_AudioSource.Stop();
-    }
     public void PlayLoop(SoundType soundType)
     {
         if (m_SoundMap.TryGetValue(soundType, out var clip) && clip != null && m_AudioSource != null)
@@ -63,6 +58,7 @@ public class AudioMainManager : SingletonMain<AudioMainManager>
             m_AudioSource.Play();
         }
     }
+    public void StopSound(SoundType type) => m_AudioSource?.Stop();
     public void PlayAudioIntroduction(AudioClip clip)
     {
         m_AudioSource.clip = clip;

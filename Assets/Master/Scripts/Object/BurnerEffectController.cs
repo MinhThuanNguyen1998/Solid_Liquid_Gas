@@ -19,10 +19,7 @@ public class BurnerEffectController : MonoBehaviour
         m_FireParticleSystem.Stop();
         m_SmokeParticleSystem.Stop();
     }
-    private void OnDestroy()
-    {
-        AudioMainManager.Instance.StopLoop();
-    }
+    private void OnDisable() => AudioMainManager.Instance.StopLoop();
     public void TurnOnEffect()
     {
         if (m_FireParticleSystem != null) 

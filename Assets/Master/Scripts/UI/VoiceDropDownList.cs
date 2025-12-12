@@ -6,7 +6,7 @@ using UnityEngine;
 public class VoiceDropDownList : MonoBehaviour
 {
     [SerializeField] private CustomDropdown m_DropDownVoice;
-    public static int CurrentVoiceIndex { get; private set; }
+    public static int CurrentVoiceIndex { get; set; }
     private void OnEnable()
     {
         if (m_DropDownVoice != null)
