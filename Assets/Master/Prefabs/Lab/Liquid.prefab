@@ -7042,7 +7042,7 @@ MonoBehaviour:
   m_DragCategory: 1
   m_Outline: {fileID: 8872487338947505530}
   m_IsDragging: 0
-  m_BoundYOffset: 1.7
+  m_BoundYOffset: 1.45
 --- !u!114 &8872487338947505530
 MonoBehaviour:
   m_ObjectHideFlags: 0

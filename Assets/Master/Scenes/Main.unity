@@ -23602,7 +23602,6 @@ MonoBehaviour:
   m_AudioButtonClip: {fileID: 8300000, guid: 5f29313afe89d8a46944344f7408d3d4, type: 3}
   m_AudioTurnOnLighter: {fileID: 8300000, guid: 7544f5fcacd822b4583ecd0220e0d21b, type: 3}
   m_AudioCloseBottle: {fileID: 8300000, guid: 8b6e50599a748a64eab2fea0c4315afa, type: 3}
-  m_AudioBoilingWater: {fileID: 8300000, guid: 6dc2d824db925294d8f71f254a638bc8, type: 3}
   m_AudioSolid: {fileID: 8300000, guid: d61f97b756c6f2746aff3e5250f53267, type: 3}
   m_AudioLiquid: {fileID: 8300000, guid: 48404052b5894454b98d1dd4286477d5, type: 3}
   m_AudioGas: {fileID: 8300000, guid: 1ee74b4beaebb7449a4da86445bb70db, type: 3}

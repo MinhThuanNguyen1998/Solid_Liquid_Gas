@@ -6,6 +6,8 @@ public class LighterTrigger : BaseTrigger
     [SerializeField] private BurnerEffectController m_BurnerEffectController;
     private bool m_IsInTrigger = false;
 
+    private void OnEnable() => MouseDragLock.Unblock();
+    
     protected override void OnEnter(Collider other)
     {
         if(other.gameObject.tag == "Bunsen")
