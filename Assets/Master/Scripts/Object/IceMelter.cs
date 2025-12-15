@@ -6,6 +6,7 @@ public class IceMelter : MonoBehaviour
     [SerializeField] private GameObject m_MelterObject;
     [SerializeField] private GameObject m_SolidStructureObject;
     [SerializeField] private GameObject m_LiquidStructureObject;
+
     private float m_MeltTime = 20f;
     private Material m_IceMat;
     private Material m_MelterMat;
@@ -24,7 +25,7 @@ public class IceMelter : MonoBehaviour
         float startIceAlpha = m_IceMat.color.a;
         float endIceAlpha = 0f;
         float startWaterAlpha = 0f;
-        float endWaterAlpha = 0.2f;
+        float endWaterAlpha = 0.07f;
 
         while (time < m_MeltTime)
         {
