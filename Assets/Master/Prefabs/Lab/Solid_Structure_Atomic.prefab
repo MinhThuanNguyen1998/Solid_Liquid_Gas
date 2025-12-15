@@ -1110,7 +1110,7 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1180,6 +1180,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Amplitude: 0.01
   m_Speed: 2
+  IsGas: 0
+  GasRadius: 0.2
+  GasSpeed: 1
 --- !u!1 &4882301419208038823
 GameObject:
   m_ObjectHideFlags: 0
