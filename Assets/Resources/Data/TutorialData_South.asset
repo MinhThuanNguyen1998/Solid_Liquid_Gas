@@ -52,10 +52,10 @@ MonoBehaviour:
     buttonContent: "D\xF9ng \u0111\u1EC3 \u0111\u1EB7t b\xECnh ch\u1EE9a ch\u1EA5t
       l\u1ECFng"
     buttonAudio: {fileID: 8300000, guid: 871e6bbf61aa8da40bf62ec64bb7fcd8, type: 3}
-  - buttonName: "\u0110\xE8n bunsen"
+  - buttonName: "\u0110\xE8n Bunsen"
     buttonContent: "D\xF9ng \u0111\u1EC3 t\u1EA1o l\u1EEDa"
     buttonAudio: {fileID: 8300000, guid: 40149ddeb7441a14cb532ecd74f3734c, type: 3}
-  - buttonName: "\u0110\u0129a petri"
+  - buttonName: "\u0110\u0129a Petri"
     buttonContent: "D\xF9ng \u0111\u1EC3 ch\u1EE9a m\u1EABu ch\u1EA5t r\u1EAFn c\u1EA7n
       quan s\xE1t"
     buttonAudio: {fileID: 8300000, guid: 08f20679736236b4d9fb9ea3aa72ced6, type: 3}
