@@ -8,6 +8,7 @@ public class IceMelter : MonoBehaviour
     [SerializeField] private GameObject m_LiquidStructureObject;
 
     private float m_MeltTime = 20f;
+    private float m_DelayTime = 3f;
     private Material m_IceMat;
     private Material m_MelterMat;
    
@@ -21,6 +22,7 @@ public class IceMelter : MonoBehaviour
     public void StartMelting() => StartCoroutine(MeltRoutine());
     private IEnumerator MeltRoutine()
     {
+        yield return new WaitForSeconds(m_DelayTime);
         float time = 0f;
         float startIceAlpha = m_IceMat.color.a;
         float endIceAlpha = 0f;
