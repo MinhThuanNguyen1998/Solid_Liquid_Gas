@@ -971,7 +971,6 @@ MonoBehaviour:
   m_BoundaryCube: {fileID: 0}
   m_UseSpecialYLimit: 1
   m_DragCategory: 0
-  m_Outline: {fileID: 0}
   m_IsDragging: 0
   m_BoundYOffset: 1.5
 --- !u!65 &57032136
@@ -38750,6 +38749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LighterTrigger: {fileID: 0}
+  m_FireParticleSystem: {fileID: 0}
 --- !u!114 &7959862797575423671
 MonoBehaviour:
   m_ObjectHideFlags: 0

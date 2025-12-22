@@ -7,7 +7,6 @@ public class MovingObjectByMouse : MonoBehaviour
     [SerializeField] private Renderer m_BoundaryCube;
     [SerializeField] private bool m_UseSpecialYLimit;
     [SerializeField] private DragCategory m_DragCategory = DragCategory.None;
-    [SerializeField] private Outline m_Outline;
     private Vector3 m_Offset;
     public bool m_IsDragging = false;
     private Bounds m_Bounds;

@@ -3,24 +3,22 @@ using DG.Tweening;
 public class LighterButton : MonoBehaviour
 {
     [SerializeField] private LighterTrigger m_LighterTrigger;
+    [SerializeField] private ParticleSystem m_FireParticleSystem;
+
     private Vector3 m_OriginalScale;
     private Tween m_ClickTween;
     private float m_DurationScale = 0.03f;
-
+    public bool IsFireOn => m_FireParticleSystem.isPlaying;
     private void Awake()
     {
         m_OriginalScale = transform.localScale;
+        m_FireParticleSystem.Stop();
     }
     private void OnMouseDown()
     {
-        //Debug.Log("Click");
-        m_LighterTrigger.TurnOnLighter();
         AudioMainManager.Instance.PlayOnShot(SoundType.TurnOnLighter);
         PlayClickAnimation();
-    }
-    private void OnMouseUp()
-    {
-        //Debug.Log("UnClick");
+        ToggleFire();
     }
     private void PlayClickAnimation()
     {
@@ -35,5 +33,12 @@ public class LighterButton : MonoBehaviour
                 transform.DOScale(m_OriginalScale, m_DurationScale)
                         .SetEase(Ease.OutQuad);
             });
+    }
+    private void ToggleFire()
+    {
+        if (IsFireOn) m_FireParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        else
+            m_FireParticleSystem.Play();
+            m_LighterTrigger.TurnOnLighter();
     }
 }
