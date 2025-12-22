@@ -401,9 +401,9 @@ GameObject:
   - component: {fileID: 6326052495334830402}
   - component: {fileID: 8296442249463859514}
   - component: {fileID: 8694078327661728154}
-  - component: {fileID: 7343087487770863989}
   - component: {fileID: 7728282809817011063}
   - component: {fileID: 2901092981027220942}
+  - component: {fileID: 1720633326273701450}
   m_Layer: 0
   m_Name: 'BottleMoving '
   m_TagString: Untagged
@@ -532,24 +532,6 @@ MonoBehaviour:
   m_DragCategory: 0
   m_IsDragging: 0
   m_BoundYOffset: 0.9
---- !u!114 &7343087487770863989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2803012049839327073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &7728282809817011063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_outline: {fileID: 7343087487770863989}
+  m_MyOutline: {fileID: 1720633326273701450}
   isMovable: 1
 --- !u!65 &2901092981027220942
 BoxCollider:
@@ -585,6 +567,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1720633326273701450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2803012049839327073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &2950927233635818499
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,9 +816,9 @@ GameObject:
   - component: {fileID: 797118765049560509}
   - component: {fileID: 4736343510540815320}
   - component: {fileID: 6053626407597370444}
-  - component: {fileID: 8940997793924863886}
   - component: {fileID: 457354823550760130}
   - component: {fileID: 2932890826502592277}
+  - component: {fileID: 2997301360660660432}
   m_Layer: 0
   m_Name: 'LidMoving '
   m_TagString: Untagged
@@ -939,24 +939,6 @@ MonoBehaviour:
   m_DragCategory: 0
   m_IsDragging: 0
   m_BoundYOffset: 0.25
---- !u!114 &8940997793924863886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4271326021997660405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!114 &457354823550760130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_outline: {fileID: 8940997793924863886}
+  m_MyOutline: {fileID: 2997301360660660432}
   isMovable: 1
 --- !u!65 &2932890826502592277
 BoxCollider:
@@ -992,6 +974,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.99999994, y: 1, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2997301360660660432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4271326021997660405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &4895040443437996435
 GameObject:
   m_ObjectHideFlags: 0

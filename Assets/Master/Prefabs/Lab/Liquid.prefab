@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8292838659575730330}
   - component: {fileID: 4244041328255109999}
   - component: {fileID: 5149554341553170652}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fire_Stove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7006,6 +7006,8 @@ GameObject:
   - component: {fileID: 2466605369545981322}
   - component: {fileID: 8791674630449744798}
   - component: {fileID: 4809783215354452809}
+  - component: {fileID: 7820672447180586735}
+  - component: {fileID: 2996292509376257630}
   m_Layer: 0
   m_Name: BunsenMoving
   m_TagString: Untagged
@@ -7148,6 +7150,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7820672447180586735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931204392270391446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyOutline: {fileID: 2996292509376257630}
+  isMovable: 1
+--- !u!114 &2996292509376257630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931204392270391446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &3956851615570995545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,6 +8198,8 @@ GameObject:
   - component: {fileID: 5446724363689160763}
   - component: {fileID: 3002884386413764334}
   - component: {fileID: 9195735929582575483}
+  - component: {fileID: 8816855910930323928}
+  - component: {fileID: 5473136464112690272}
   m_Layer: 0
   m_Name: LiquidMoving
   m_TagString: Untagged
@@ -8305,6 +8341,38 @@ MonoBehaviour:
   m_DragCategory: 1
   m_IsDragging: 0
   m_BoundYOffset: 1.2
+--- !u!114 &8816855910930323928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207565710191537199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyOutline: {fileID: 5473136464112690272}
+  isMovable: 1
+--- !u!114 &5473136464112690272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207565710191537199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &6647411848066089532
 GameObject:
   m_ObjectHideFlags: 0
@@ -8316,7 +8384,7 @@ GameObject:
   - component: {fileID: 7082719124333156794}
   - component: {fileID: 1520731396900142115}
   - component: {fileID: 140338684299798780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fire_Stove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13251,6 +13319,8 @@ GameObject:
   - component: {fileID: 9186559213162575101}
   - component: {fileID: 4650381463491985546}
   - component: {fileID: 9211753683625892836}
+  - component: {fileID: 8840819151982364063}
+  - component: {fileID: 2105185078566779999}
   m_Layer: 0
   m_Name: LighterMoving
   m_TagString: Untagged
@@ -13414,6 +13484,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.38408262, y: 1, z: 1}
   m_Center: {x: -0.30329248, y: 0, z: 0}
+--- !u!114 &8840819151982364063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757088464884273598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyOutline: {fileID: 2105185078566779999}
+  isMovable: 1
+--- !u!114 &2105185078566779999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6757088464884273598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &6806886002218758860
 GameObject:
   m_ObjectHideFlags: 0
@@ -14329,7 +14431,7 @@ GameObject:
   - component: {fileID: 5842232103342369003}
   - component: {fileID: 6302598374042964952}
   - component: {fileID: 5849293845524196028}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Smoke_Pot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

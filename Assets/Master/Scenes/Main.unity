@@ -947,8 +947,8 @@ GameObject:
   - component: {fileID: 57032137}
   - component: {fileID: 57032136}
   - component: {fileID: 57032135}
-  - component: {fileID: 57032141}
   - component: {fileID: 57032140}
+  - component: {fileID: 57032141}
   m_Layer: 0
   m_Name: MovingMagnifying
   m_TagString: Untagged
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af2840889c9764fac9f839ed7210c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_outline: {fileID: 57032141}
+  m_MyOutline: {fileID: 57032141}
   isMovable: 1
 --- !u!114 &57032141
 MonoBehaviour:
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 57032134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Script: {fileID: 11500000, guid: ae5c6ee368e2aad43997d80037d665be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 0
@@ -4187,7 +4187,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
