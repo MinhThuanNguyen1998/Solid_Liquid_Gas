@@ -3,7 +3,7 @@
 [DisallowMultipleComponent]
 public class OutlineHoverEffect: MonoBehaviour
 {
-    [SerializeField] private Outline m_outline;
+    [SerializeField] private MyOutLine m_MyOutline;
 
     [Header("Object Type")]
     [Tooltip("Nếu bật, object này là loại có thể di chuyển.")]
@@ -15,8 +15,8 @@ public class OutlineHoverEffect: MonoBehaviour
     private void Awake()
     {
         // Lấy reference Outline
-        if (m_outline == null)
-            m_outline = GetComponent<Outline>();
+        if (m_MyOutline == null)
+            m_MyOutline = GetComponent<MyOutLine>();
 
         // Load ScriptableObject chỉ 1 lần
         if (sharedSettings == null)
@@ -29,7 +29,7 @@ public class OutlineHoverEffect: MonoBehaviour
             }
         }
 
-        if (m_outline == null)
+        if (m_MyOutline == null)
         {
             Debug.LogWarning($"⚠️ Outline component missing on {name}");
             return;
@@ -39,32 +39,32 @@ public class OutlineHoverEffect: MonoBehaviour
         ApplyOutlineSettings();
 
         // Tắt mặc định để tiết kiệm performance
-        m_outline.enabled = false;
+        m_MyOutline.enabled = false;
     }
 
     private void ApplyOutlineSettings()
     {
         if (isMovable)
         {
-            m_outline.OutlineColor = sharedSettings.movableColor;
-            m_outline.OutlineWidth = sharedSettings.movableWidth;
-            m_outline.OutlineMode = sharedSettings.movableMode;
+            m_MyOutline.OutlineColor = sharedSettings.movableColor;
+            m_MyOutline.OutlineWidth = sharedSettings.movableWidth;
+
         }
         else
         {
-            m_outline.OutlineColor = sharedSettings.staticColor;
-            m_outline.OutlineWidth = sharedSettings.staticWidth;
-            m_outline.OutlineMode = sharedSettings.staticMode;
+            m_MyOutline.OutlineColor = sharedSettings.staticColor;
+            m_MyOutline.OutlineWidth = sharedSettings.staticWidth;
         }
+           
     }
     private void OnMouseEnter()
     {
-        m_outline.enabled = true;
+        m_MyOutline.enabled = true;
     }
 
     private void OnMouseExit()
     {
-        m_outline.enabled = false;
+        m_MyOutline.enabled = false;
     }
 }
 
