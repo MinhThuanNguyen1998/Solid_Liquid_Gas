@@ -27,6 +27,7 @@ public class MovingObjectByMouse : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
         if (MouseDragLock.IsBlocked && m_DragCategory != DragCategory.None)return;
 
         Vector3 mousePosition = Input.mousePosition;
@@ -36,6 +37,7 @@ public class MovingObjectByMouse : MonoBehaviour
     }
     private void OnMouseDrag()
     {
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
         if (MouseDragLock.IsBlocked && m_DragCategory != DragCategory.None) return;
         if (m_IsDragging)
         {
